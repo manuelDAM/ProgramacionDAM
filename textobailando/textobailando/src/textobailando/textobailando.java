@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class textobailando extends JFrame {
-
+//ATRIBUTOS
 	private JPanel contentPane;
 	private JTextField textoizquierda;
 	private JTextField textoderecha;
@@ -20,7 +20,7 @@ public class textobailando extends JFrame {
 	private JButton btnSalir;
 
 	/**
-	 * Launch the application.
+	 * METODO PRINCIPAL
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -36,7 +36,7 @@ public class textobailando extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * CREANDO LA VENTANA DEL PROGRAMA
 	 */
 	public textobailando() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,7 +56,7 @@ public class textobailando extends JFrame {
 		contentPane.add(textoderecha);
 		textoderecha.setColumns(10);
 		
-		JButton button = new JButton("    - - >");
+		JButton button = new JButton("    - - >");  //BOTON DERECHA
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				textoderecha.setText(textoizquierda.getText());
@@ -66,7 +66,7 @@ public class textobailando extends JFrame {
 		button.setBounds(144, 70, 97, 25);
 		contentPane.add(button);
 		
-		button_1 = new JButton("  < -   -");
+		button_1 = new JButton("  < -   -"); //BOTON IZQUIERDA
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textoizquierda.setText(textoderecha.getText());
@@ -76,7 +76,7 @@ public class textobailando extends JFrame {
 		button_1.setBounds(144, 192, 97, 25);
 		contentPane.add(button_1);
 		
-		btnSalir = new JButton("SALIR");
+		btnSalir = new JButton("SALIR"); //BOTON SALIR
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(1);
@@ -86,3 +86,4 @@ public class textobailando extends JFrame {
 		contentPane.add(btnSalir);
 	}
 }
+
