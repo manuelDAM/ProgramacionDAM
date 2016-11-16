@@ -4,25 +4,23 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-//Llamamos al paquete Jugador
-import JUGADOR.JUGADOR;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class PRINCIPAL extends JFrame {
+public class Proyecto3_Jugador extends JFrame {
 
 	private JPanel contentPane;
 
 	public static void main(String[] args) {
 		//Aquí introducimos los datos del jugador
-		JUGADOR player1=new JUGADOR();
+		Jugador player1=new Jugador();
 		player1.setNombre("Vicente");
 		player1.setApellidos("Sanchez");
-		player1.setEdad(35);
+		player1.setEdad(33);
 		player1.setId(0);
 		System.out.println(player1.toString());
 		//Introducimos un segundo jugador
-		JUGADOR player2=new JUGADOR();
+		Jugador player2=new Jugador();
 		player2.setNombre("Manuel");
 		player2.setApellidos("Gimenez");
 		player2.setEdad(29);
@@ -32,7 +30,7 @@ public class PRINCIPAL extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PRINCIPAL frame = new PRINCIPAL();
+					Proyecto3_Jugador frame = new Proyecto3_Jugador();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,9 +40,9 @@ public class PRINCIPAL extends JFrame {
 	}
 
 	//Creación de la ventana (esta vacia)
-	public PRINCIPAL() {
+	public Proyecto3_Jugador() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 650, 500);//Donde aparece y el tamaño de la ventana
+		setBounds(100, 100, 650, 500);//Donde modificamos el tamaño de la ventana
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
