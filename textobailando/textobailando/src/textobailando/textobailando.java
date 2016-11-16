@@ -86,3 +86,4 @@ public class textobailando extends JFrame {
 		contentPane.add(btnSalir);
 	}
 }
+
