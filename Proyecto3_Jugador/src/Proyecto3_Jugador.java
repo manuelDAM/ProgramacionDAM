@@ -18,14 +18,14 @@ public class Proyecto3_Jugador extends JFrame {
 		player1.setApellidos("Sanchez");
 		player1.setEdad(33);
 		player1.setId(0);
-		System.out.println(player1.toString());
+		System.out.println(player1.toString()); //mostramos por pantalla el jugador 1
 		//Introducimos un segundo jugador
 		Jugador player2=new Jugador();
 		player2.setNombre("Manuel");
 		player2.setApellidos("Gimenez");
 		player2.setEdad(29);
 		player2.setId(1);
-		System.out.println(player2.toString());
+		System.out.println(player2.toString());//mostramos por pantalla el jugador 2
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

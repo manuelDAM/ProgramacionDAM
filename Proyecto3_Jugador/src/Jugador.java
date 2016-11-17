@@ -47,7 +47,7 @@ public class Jugador {
 	 public void setId(int Id) {
 		 this.Id = Id;
 	 }
-	 //Mostramos por pantalla el nombre, apellidos y edad del jugador
+	 //devolvemos a la clase principal nombre, apellido y edad
 	 public String toString(){
 		 return this.Nombre+" "+this.Apellidos+" "+this.Edad;
       }
