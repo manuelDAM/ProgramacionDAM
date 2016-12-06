@@ -23,10 +23,11 @@ public class Principal extends JFrame {
 	private JTextField textField_apellido2;
 	private JTextField textField_edad;
 	private JTextField textField_4;
+	private JButton btnSalir; //declaro el botón "SALIR"
 	
   //Generamos un nuevo jugador
 	Jugador player1=new Jugador();
-	private JButton btnNewButton_1;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -158,17 +159,17 @@ public class Principal extends JFrame {
 		btnNewButton.setBounds(24, 231, 362, 25);
 		contentPane.add(btnNewButton);
 		
-		btnNewButton_1 = new JButton("SALIR");
-		btnNewButton_1.setBackground(new Color(25, 25, 112));
-		btnNewButton_1.addActionListener(new ActionListener() {
+		btnSalir = new JButton("SALIR");
+		btnSalir.setBackground(new Color(240, 240, 240));
+		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 				
 			}
 		});
-		btnNewButton_1.setForeground(Color.RED);
-		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnNewButton_1.setBounds(363, 0, 69, 22);
-		contentPane.add(btnNewButton_1);
+		btnSalir.setForeground(Color.RED);
+		btnSalir.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnSalir.setBounds(363, 0, 69, 22);
+		contentPane.add(btnSalir);
 	}
 }
