@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="JUGADOR.JUGADOR"/>
+<fullyQualifiedTypeName name="Ventanas.Login"/>
+<fullyQualifiedTypeName name="Ventanas.Juego"/>
+<fullyQualifiedTypeName name="Juego.Jugador"/>
+<fullyQualifiedTypeName name="Principal.Principal"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="javax.print.DocFlavor.URL"/>
+</qualifiedTypeNameHistroy>
