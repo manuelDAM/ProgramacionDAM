@@ -46,7 +46,7 @@ public class Juego extends JFrame {
 			}
 		});
 		btnSalir.setForeground(Color.RED); //color de las letras del botón
-		btnSalir.setFont(new Font("Tahoma", Font.BOLD, 11)); //fuente del botón
+		btnSalir.setFont(new Font("Tahoma", Font.BOLD, 11)); //fuente del botón es Tahoma
 		btnSalir.setBounds(363, 0, 69, 22); //lugar de colocación del botón
 		contentPane.add(btnSalir);
 	
